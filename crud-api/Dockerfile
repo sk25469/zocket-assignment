@@ -6,6 +6,6 @@ COPY go.mod ./
 COPY go.sum ./
 RUN go mod download
 COPY . ./
-EXPOSE 5000
+EXPOSE 3000
 RUN go build /app/cmd/main
 CMD ["./main"]
